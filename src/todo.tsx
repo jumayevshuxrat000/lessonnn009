@@ -12,11 +12,6 @@ interface TodoItem {
   updatedAt?: string;
 }
 
-interface EditingState {
-  id: number | string;
-  completed: boolean;
-}
-
 const Todo: React.FC = () => {
   const queryClient = useQueryClient();
   const inputRef = useRef<HTMLInputElement | null>(null);
